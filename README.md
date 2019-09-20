@@ -23,7 +23,7 @@ Instead, I did:
 It works sort of OK.  The usual git workflow works.  But, like Craig says, it breaks the diff.  I updated my "big.xml" and "little.xml" files and checked them in.  The diff for little.xml looks like I would expect it to:
 
 <pre>
-# git diff master~1:little.xml little.xml
+$ git diff master~1:little.xml little.xml
 
   diff --git a/little.xml b/little.xml
   index e529ccc..97f32a1 100644
