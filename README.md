@@ -29,16 +29,16 @@ It works sort of OK.  The usual git workflow works.  But, like Craig says, it br
   --- a/little.xml
   +++ b/little.xml
   @@ -1,5 +1,10 @@
-   <?xml version="1.0" encoding="UTF-8"?>
+   &lt;?xml version="1.0" encoding="UTF-8"?&gt;
   +
   +
   +CHANGED THE FILE
   +
-   <?xml-model href="http://schemata.earlyprint.org/schemata/tei_earlyprint.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+   &lt;?xml-model href="http://schemata.earlyprint.org/schemata/tei_earlyprint.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt;
   +
-   <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A30790">
-    <teiHeader>
-     <fileDesc>
+   &lt;TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A30790"&gt;
+    &lt;teiHeader&gt;
+     &lt;fileDesc&gt;
 </pre>
 
 But the diff for big.xml is completely broken:
@@ -81,14 +81,14 @@ Then, you use the ungainly commit ID's to run the diff script:
   --- .git/lfs/objects/f1/d7/f1d775b6363115b68d4d639727aab0876fe2f20c9f715e1b352584bb1c9d9b39	2019-09-20 10:15:01.117618592 -0500
   +++ .git/lfs/objects/4d/19/4d1947a0a89de7f9dd07ef212332c6e433e3c1e4c2a2fef255d9fca7d143515f	2019-09-20 10:09:43.604131213 -0500
   @@ -1,8 +1,4 @@
-   <?xml version="1.0" encoding="UTF-8"?>
+   &lt;?xml version="1.0" encoding="UTF-8"?>
   -
   -
   -CHANGED THE BIG FILE
   -
-   <?xml-model href="http://schemata.earlyprint.org/schemata/tei_earlyprint.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-   <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A30905">
-    <teiHeader>
+   &lt;?xml-model href="http://schemata.earlyprint.org/schemata/tei_earlyprint.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt;
+   &lt;TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A30905"&gt;
+    &lt;teiHeader&gt;
 </pre>
 
 
