@@ -96,8 +96,3 @@ $ bash git-lfs-diff.sh d68d3ade7930ca757276b236f08d11c974e226dc 9f43d8d46414d304
 </pre>
 
 
-## Bottom line?
-
-It's really a question of which inconvenience do we want to live with . . . this would, I suppose, be tolerable.
-
-
